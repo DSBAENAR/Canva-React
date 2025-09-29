@@ -71,9 +71,40 @@ export default function Canvas(){
 
     },[isDrawing]);
 
+    const clear = () => {
+        const canva = canvasRef.current
+
+        if (!canva) return
+
+        const context = canva.getContext("2d");
+        if (!context) return;
+
+        context.clearRect(0, 0, canva.width, canva.height);
+    }
+
     
 
     return(
-        <canvas ref={canvasRef} width={400} height={400} style={{ border: "1px solid black" }}/>
+        <div>
+      <button
+        onClick={clear}
+        style={{
+          marginBottom: "10px",
+          padding: "5px 10px",
+          border: "1px solid gray",
+          cursor: "pointer",
+        }}
+      >
+        Clear
+      </button>
+      <br />
+      <canvas
+        ref={canvasRef}
+        width={400}
+        height={400}
+        style={{ border: "1px solid black", background: "white" }}
+      />
+    </div>
+        
     )
 }
