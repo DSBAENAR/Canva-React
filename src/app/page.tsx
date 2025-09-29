@@ -9,7 +9,9 @@ export default function Home(){
       <h1>Hola mundo en React</h1>
         <p> Has hecho click {count} veces</p>
         <button onClick={() => setCount(count +1)}>Click me</button>
-        <Canvas/>
+         <div style={{ marginTop: "20px" }}>
+            <Canvas />
+          </div>
     </main>
   );
 }
