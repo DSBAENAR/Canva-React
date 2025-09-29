@@ -151,7 +151,7 @@ export default function Canvas() {
     <div>
       {/* Información del color del usuario */}
       <div className="color-info">
-        🎨 Tu color de dibujo: 
+        Your Color is: 
         <span 
           style={{ 
             backgroundColor: color, 
@@ -165,12 +165,12 @@ export default function Canvas() {
         </span>
       </div>
 
-      {/* Botón para limpiar el canvas */}
+     
       <button onClick={clear} className="btn-clear">
-        🗑️ Limpiar Pizarra
+        Clear
       </button>
 
-      {/* Canvas donde se dibuja */}
+     
       <canvas
         ref={canvasRef}
         width={500}
@@ -179,7 +179,7 @@ export default function Canvas() {
 
       {/* Instrucciones simples */}
       <p style={{ fontSize: '14px', color: '#666', marginTop: '10px' }}>
-        💡 Arrastra el mouse sobre la pizarra para dibujar
+        Use the mouse to draw on the canvas. Your drawings will be shared in real-time with other users.
       </p>
     </div>
   );

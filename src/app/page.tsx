@@ -7,24 +7,10 @@ export default function Home() {
   
   return (
     <main>
-      <h1>🎨 Mi Aplicación de Dibujo</h1>
-      
-      {/* Sección del contador */}
+      <h1>Shared Canva</h1>
       <div className="container">
-        <h2>Contador de Clicks</h2>
-        <p>Has hecho click <span className="counter">{count}</span> veces</p>
-        <button onClick={() => setCount(count + 1)}>
-          👆 Hacer Click
-        </button>
-        <button onClick={() => setCount(0)}>
-          🔄 Resetear
-        </button>
-      </div>
-
-      {/* Sección del canvas */}
-      <div className="container">
-        <h2>Pizarra para Dibujar</h2>
-        <p>Dibuja con el mouse y comparte en tiempo real</p>
+        <h2>Canvas to Draw</h2>
+        <p>Draw with your mouse and share in real-time</p>
         <Canvas />
       </div>
     </main>
