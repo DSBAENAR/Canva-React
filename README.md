@@ -174,3 +174,5 @@ public class DrawEvent {
     // Getters and Setters
 }
 ```
+
+9. **Testing**: To run the application, use the command `npm run dev` to start both the Next.js frontend and the Spring Boot backend concurrently.
